@@ -21,3 +21,10 @@ Factory.define :comic do |f|
   f.xpath_title "id('middleContent')/div[2]/div/div/h1"
   f.xpath_image "id('middleContent')/div[2]/div/div/img"
 end
+
+Factory.define :suggestion do |f|
+  f.association :user, factory: :user
+  f.name "Dominic Deegan"
+  f.website "http://www.dominic-deegan.com/"
+  f.reason "It's an awesome comic"
+end

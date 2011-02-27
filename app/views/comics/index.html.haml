@@ -2,6 +2,8 @@
   %ul#admin_nav
     %li#admin_add_comic= link_to "Add Comic", new_comic_path
 
+= link_to "Suggest a comic", new_suggestion_path, class: "button"
+
 - if comics.any?
   = render :partial => 'comic'
 - else
